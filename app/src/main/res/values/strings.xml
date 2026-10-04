@@ -13,4 +13,5 @@
     <string name="open_demo">Open flight log</string>
     <string name="about_demo">About this demo</string>
     <string name="back_to_demo">Back</string>
+    <string name="return_to_demo">Demo home</string>
 </resources>

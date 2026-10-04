@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         addFlight.setOnClickListener(this);
 
         Button logoutButton = findViewById(R.id.btn_logout);
-        logoutButton.setText("Logout");
+        logoutButton.setText(R.string.return_to_demo);
         logoutButton.setOnClickListener(this);
 
     }
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent = new Intent(MainActivity.this, LogDetailsActivity.class);
             startActivity(intent);
         }
-        else if (click.getText().equals("Logout")) {
+        else if (v.getId() == R.id.btn_logout) {
             intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
