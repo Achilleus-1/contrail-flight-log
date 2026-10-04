@@ -66,7 +66,7 @@ public class LogDetailsActivity extends AppCompatActivity {
 
                 writer.write(content.getBytes());
                 writer.close();
-                Log.d("LogDetailsActivity", "Writing " + content + " to logs.csv");
+                // Flight record contents must not be written to diagnostic logs.
                 finish(); // Close the activity
             } catch (IOException e) {
                 e.printStackTrace();

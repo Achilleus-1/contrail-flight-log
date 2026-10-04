@@ -8,4 +8,9 @@
     <string name="text_on_imperial">Imperial</string>
 
     <string name="log_entry_prompt">Enter data for new log (%1$s):</string>
+    <string name="demo_title">Flight log demo</string>
+    <string name="demo_notice">This local coursework demo has no accounts. Use fictional flight data. Records stay on this device until you clear them in Settings or uninstall the app.</string>
+    <string name="open_demo">Open flight log</string>
+    <string name="about_demo">About this demo</string>
+    <string name="back_to_demo">Back</string>
 </resources>

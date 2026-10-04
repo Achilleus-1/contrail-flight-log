@@ -4,15 +4,15 @@ Java Android prototype for recording, browsing, searching, editing, and comparin
 
 ## Original coursework
 
-- CS 4393-001 — User Interfaces, Spring 2025
+- User Interfaces
 
-Originally completed at the University of Texas at San Antonio during the terms above and imported to GitHub later. This repository preserves the submitted implementation; repository documentation and import housekeeping were added separately.
+Originally completed at the University of Texas at San Antonio and imported to GitHub later. This repository retains the coursework implementation with documented maintenance fixes and demonstration assets.
 
 **Languages and technologies:** Java, Android, XML layouts, Gradle Kotlin DSL, local file storage.
 
 ## Implementation
 
-- Team app activities for log lists, log details, comparison, login, recovery, and settings.
+- App activities for log lists, log details, comparison, demo entry, and settings.
 - Personal coursework contribution: UI/layout work, coding participation, use cases, and usability testing.
 - Local flat-file parsing/search and comparison workflows retained from the submitted app.
 
@@ -30,11 +30,17 @@ Originally completed at the University of Texas at San Antonio during the terms 
 
 ## Running the source
 
-Open in Android Studio with the SDK/Gradle versions declared by the project. This source-only import excludes the APK, local.properties, wrapper JAR, and bitmap launcher icons. Regenerate the wrapper and restore compatible launcher resources before a full build.
+The official Gradle wrapper is restored and checksum verified. Install JDK 17 and Android SDK 34, then run `./gradlew testDebugUnitTest assembleDebug assembleDebugAndroidTest`. Open in Android Studio to run the local demo. See DEVELOPMENT.md.
 
 ## Scope and limitations
 
-- The original prototype stores credentials in plaintext, logs passwords, and can display recovered passwords. This is an educational prototype and must not be used with real credentials.
-- No credential database or personal local configuration is included. Authentication was not redesigned during import.
+- The app now opens as a local demo without collecting usernames or passwords. Legacy plaintext credentials are deleted at startup. Password recovery and credential logging are removed.
+- Flight record contents are excluded from diagnostic logging and Android cloud backup/device transfer. Use fictional data; the app provides no authentication or encryption for local flight records.
 
 Only source code, build configuration, and required text inputs are included. Written submissions, assignment instructions, PDFs, videos, generated outputs, binary builds, and private configuration are omitted. Anonymized contributor labels and supplied-code comments retain the distinction between submitted work and scaffolding. No license for course-provided material is inferred.
+
+## Development and reuse
+
+See [DEVELOPMENT.md](DEVELOPMENT.md) for reproducible checks and known archival dependencies, [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance, and [SECURITY.md](SECURITY.md) for private reports.
+
+Reuse terms and provenance are documented in [NOTICE.md](NOTICE.md) and [LICENSE](LICENSE). The maintenance license does not grant rights to original course or team material.
