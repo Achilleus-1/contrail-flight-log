@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context="cs4393.contrail.LogCompareActivity">
+
+    <!-- Prompt -->
+    <TextView
+        android:id="@+id/comparePrompt"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:text="Enter two Flight Numbers at the bottom and press the Compare button to compare."
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Date -->
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        android:text="Date:"
+        android:textColor="@color/button_text"
+        app:layout_constraintTop_toBottomOf="@+id/comparePrompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/date1" />
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/comparePrompt"
+        app:layout_constraintStart_toEndOf="@+id/dateText"
+        app:layout_constraintEnd_toStartOf="@+id/date2" />
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/button_text"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/comparePrompt"
+        app:layout_constraintStart_toEndOf="@+id/date1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Origin -->
+    <EditText
+        android:id="@+id/orginText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/button_text"
+        android:text="Origin:"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/dateText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/location1" />
+
+    <EditText
+        android:id="@+id/location1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/date1"
+        app:layout_constraintStart_toEndOf="@+id/orginText"
+        app:layout_constraintEnd_toStartOf="@+id/location2" />
+
+    <EditText
+        android:id="@+id/location2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/date2"
+        app:layout_constraintStart_toEndOf="@+id/location1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Destination -->
+    <EditText
+        android:id="@+id/destinationText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_text"
+        android:layout_marginStart="15dp"
+        android:text="Destination:"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/orginText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/destination1" />
+
+    <EditText
+        android:id="@+id/destination1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/location1"
+        app:layout_constraintStart_toEndOf="@+id/destinationText"
+        app:layout_constraintEnd_toStartOf="@+id/destination2" />
+
+    <EditText
+        android:id="@+id/destination2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/button_text"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/location2"
+        app:layout_constraintStart_toEndOf="@+id/destination1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Aircraft -->
+    <EditText
+        android:id="@+id/aircraftText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/button_text"
+        android:text="Aircraft:"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/destinationText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aircraft1" />
+
+    <EditText
+        android:id="@+id/aircraft1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_text"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/destination1"
+        app:layout_constraintStart_toEndOf="@+id/aircraftText"
+        app:layout_constraintEnd_toStartOf="@+id/aircraft2" />
+
+    <EditText
+        android:id="@+id/aircraft2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/button_text"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/destination2"
+        app:layout_constraintStart_toEndOf="@+id/aircraft1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- AID -->
+    <EditText
+        android:id="@+id/aidText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/button_text"
+        android:text="Aircraft ID:"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aircraftText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aid1" />
+
+    <EditText
+        android:id="@+id/aid1"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aircraft1"
+        app:layout_constraintStart_toEndOf="@+id/aidText"
+        app:layout_constraintEnd_toStartOf="@+id/aid2" />
+
+    <EditText
+        android:id="@+id/aid2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aircraft2"
+        app:layout_constraintStart_toEndOf="@+id/aid1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Flight Time -->
+    <EditText
+        android:id="@+id/flighttimeText"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/button_text"
+        android:text="Flight Time:"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aidText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/flighttime1" />
+
+    <EditText
+        android:id="@+id/flighttime1"
+        android:layout_width="127dp"
+        android:textColor="@color/button_text"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aid1"
+        app:layout_constraintStart_toEndOf="@+id/flighttimeText"
+        app:layout_constraintEnd_toStartOf="@+id/flighttime2" />
+
+    <EditText
+        android:id="@+id/flighttime2"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_text"
+        android:layout_marginEnd="15dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/aid2"
+        app:layout_constraintStart_toEndOf="@+id/flighttime1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Inputs and Buttons -->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/compInput1"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="Flight 1"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/compInput2"
+        android:layout_width="84dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="#FFFFFF"
+        android:hint="Flight 2"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/compInput1" />
+
+    <Button
+        android:id="@+id/compareConfirm"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Compare"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="154dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/compareConfirm"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- BG Color -->
+    <color name="background_color">#2E2E2E</color>
+
+    <!-- Button BG Color -->
+    <color name="button_background">#f6a627</color>
+
+    <!-- button words Color -->
+    <color name="button_text">#000000</color>
+
+    <!-- Other freeuse colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>

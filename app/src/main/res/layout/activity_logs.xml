@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- Prompt -->
+    <TextView
+        android:id="@+id/date_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Please enter the desired Flight Number"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Flight Number Input -->
+    <EditText
+        android:id="@+id/enter_flightNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Enter Flight Number"
+        android:textColorHint="#666666"
+        android:inputType="text"
+        android:paddingBottom="16dp"
+        android:textColor="@color/button_text"
+        android:textSize="16sp" />
+
+    <!-- Fetched Log Display Section -->
+    <LinearLayout
+        android:id="@+id/log_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/log_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:paddingBottom="8dp"
+            android:text="Date:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_flightNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="Flight Number:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_placefrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="Origin:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_placeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="Destination:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_aircraft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="Aircraft Make and Model:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_aid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="AID:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_flighttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:text="Flight Time:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/log_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@android:drawable/edit_text"
+            android:editable="false"
+            android:inputType="text"
+            android:paddingBottom="210dp"
+            android:text="Remarks:"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+<Button
+    android:id="@+id/btn_search_log"
+    android:backgroundTint="@color/button_background"
+    android:textColor="@color/button_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Search" />
+
+
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:backgroundTint="@color/button_background"
+        android:textColor="@color/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+</LinearLayout>

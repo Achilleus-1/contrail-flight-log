@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Contrail</string>
+    <!-- Settings Title -->
+    <string name="settings_title">Settings</string>
+    <!-- Switch Texts -->
+    <string name="use_imperial_units">Use Imperial Units</string>
+    <string name="text_off_metric">Metric</string>
+    <string name="text_on_imperial">Imperial</string>
+
+    <string name="log_entry_prompt">Enter data for new log (%1$s):</string>
+</resources>

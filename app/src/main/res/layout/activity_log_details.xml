@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Enter data for new log: (Enter N/A for any fields that do not apply)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/log_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (MM/DD/YYYY)"
+        android:inputType="text"
+        android:textColorHint="#666666"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Flight Number -->
+    <EditText
+        android:id="@+id/log_flightNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Flight Number"
+        android:textColorHint="#666666"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Origin -->
+    <EditText
+        android:id="@+id/log_placefrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#666666"
+        android:hint="Origin"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Destination -->
+    <EditText
+        android:id="@+id/log_placeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#666666"
+        android:hint="Destination"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Aircraft -->
+    <EditText
+        android:id="@+id/log_aircraft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#666666"
+        android:hint="Aircraft Make and Model"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- AID -->
+    <EditText
+        android:id="@+id/log_aid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#666666"
+        android:hint="AID (Aircraft ID)"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Flight Time -->
+    <EditText
+        android:id="@+id/log_flighttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Flight Time (hrs)"
+        android:textColorHint="#666666"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Remarks -->
+    <EditText
+        android:id="@+id/log_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:textColorHint="#666666"
+        android:hint="Remarks / Procedures / Maneuvers"
+        android:inputType="textMultiLine"
+        android:background="@android:drawable/edit_text"
+        android:textColor="@color/button_text"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_save_log"
+            android:backgroundTint="@color/button_background"
+            android:textColor="@color/button_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Flight Log"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel_log"
+            android:backgroundTint="@color/button_background"
+            android:textColor="@color/button_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
